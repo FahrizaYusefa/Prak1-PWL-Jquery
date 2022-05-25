@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <center>
+                <h2>Pemesanan Produk</h2>
+            </center><hr/>
+        </div>
+
+        <!-- Form Pesanan -->
+        <div class="card">
+            <div class="card-header">Data</div>
+            <div class="card-body">
+                <label for="nama" class="form-label">Nama</label><br>
+                <input class="form-control" type="text" name="nama" id="nama" placeholder="Nama">
+            </div>
+            <br>
+            
+            <table id="data_produk">
+                <label>Pilih Produk</label>
+                <br>
+
+                <div class="col-md-3">
+                    <select class="form-control-sm" id="produk" onchange="tampil()">
+                        <option value="">-Pilih Kategori-</option>
+                        <option value="Jet Tempur">Jet Tempur</option>
+                        <option value="Nuklir Hiroshima">Nuklir Hiroshima</option>
+                        <option value="Infinity Stone">Infinity Stone</option>
+                        <option value="Burj Khalifa">Burj Khalifa</option>
+                        <option value="Rudal Hipersonik">Rudal Hipersonik</option>
+                    </select>
+                    <input class="form-control-sm" id="banyak" type="number" placeholder="Jumlah">
+                    <button class="tambah btn-secondary btn">Tambah</button>
+                </div>
+            </table>
+            
+            <div class="d-grid gap-2">
+                <button class=" btn btn-primary" id="pesan">Pesan</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
